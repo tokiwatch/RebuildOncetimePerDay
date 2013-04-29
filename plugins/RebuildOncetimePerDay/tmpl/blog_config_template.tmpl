@@ -1,0 +1,26 @@
+<mtapp:setting
+    id="rebuild_oncetime_per_day_enable"
+    label="<__trans phrase="RebuildOncetimePerDay enable:">">
+    <p><input type="checkbox" value="1" name="rebuild_oncetime_per_day_enable" id="rebuild_oncetime_per_day_enable"<mt:if name="rebuild_oncetime_per_day_enable"> checked="checked"</mt:if> class="cb"/> <label for="rebuild_oncetime_per_day_enable"><__trans phrase="Enable this plugin in this blog"></label></p>
+</mtapp:setting>
+
+<mtapp:setting
+    id="rebuild_oncetime_per_day_target_template_ids"
+    label="<__trans phrase="RebuildOncetimePerDay target template ids:">"
+    hint="<__trans phrase="RebuildOncetimePerDay target template ids Hint">">
+    <p><input type="text" name="rebuild_oncetime_per_day_target_template_ids" id="rebuild_oncetime_per_day_target_template_ids" value="<mt:var name="rebuild_oncetime_per_day_target_template_ids" escape="html">" /></p>
+</mtapp:setting>
+
+<mtapp:setting
+    id="rebuild_oncetime_per_day_starttime"
+    label="<__trans phrase="RebuildOncetimePerDay starttime:">"
+    hint="<__trans phrase="RebuildOncetimePerDay starttime Hint">">
+    <input type="text" name="rebuild_oncetime_per_day_starttime" id="rebuild_oncetime_per_day_starttime" value="<mt:var name="rebuild_oncetime_per_day_starttime" escape="html">" />
+</mtapp:setting>
+
+<mtapp:setting
+    id="rebuild_oncetime_per_day_lastdate"
+    label="<__trans phrase="RebuildOncetimePerDay lastdate:">"
+    hint="<__trans phrase="RebuildOncetimePerDay lastdate Hint">">
+    <input type="text" name="rebuild_oncetime_per_day_lastdate" id="rebuild_oncetime_per_day_lastdate" value="<mt:var name="rebuild_oncetime_per_day_lastdate" escape="html">" />
+</mtapp:setting>

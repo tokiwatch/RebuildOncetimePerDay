@@ -1,0 +1,23 @@
+id: rebuildoncetimeperday
+key: MT::Plugin::RebuildOncetimePerDay
+name: RebuildOncetimePerDay
+version: 0.2
+description: <MT_TRANS phrase='description of RebuildOncetimePerDay'>
+author_name: Alliance Port, LLC
+author_link: http://www.allianceport.jp/
+l10n_class: RebuildOncetimePerDay::L10N
+blog_config_template: blog_config_template.tmpl
+settings:
+    rebuild_oncetime_per_day_enable:
+        default: 0
+    rebuild_oncetime_per_day_target_template_ids:
+        default: 0
+    rebuild_oncetime_per_day_starttime:
+        default: 00:01
+    rebuild_oncetime_per_day_lastdate:
+        default: 0
+tasks:
+    RebuildOncetimePerDay:
+        label: RebuildOncetimePerDay
+        frequency: 3600 # no more than every 1 hours
+        code: $RebuildOncetimePerDay::RebuildOncetimePerDay::Plugin::do_rebuild_oncetime_per_day
